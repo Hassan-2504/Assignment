@@ -8,16 +8,15 @@ const Card = ({
 }: {
   title?: string;
   smallText?: string;
-  Icon: React.ComponentType; // Define the Icon prop as a component type
+  Icon: React.ComponentType<{ className?: string }>; // Ensure the Icon accepts className
 }) => {
   return (
     <div className="bg-white shadow-md rounded-lg p-6 w-70">
-      {" "}
       {/* Increased shadow intensity */}
       <div className="flex items-center p-4 justify-between space-x-4">
         {/* Icon on the left */}
         <div className="flex-shrink-0">
-          <Icon className="text-black w-8 h-8" />
+          <Icon className="text-black w-8 h-8" /> {/* Pass className here */}
         </div>
         {/* Title on the right */}
         <div className="ml-4">
@@ -33,8 +32,8 @@ const Card = ({
         <div className="ml-4">
           <img
             src="/images/vector.svg"
-            alt="Description of image"
-            className="w-20 h-15 object-cover"
+            alt="Description of the vector image" // Description for accessibility
+            className="w-20 h-20 object-cover" // Ensure valid Tailwind CSS class
           />
         </div>
       </div>
