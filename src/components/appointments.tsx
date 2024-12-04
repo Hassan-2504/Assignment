@@ -32,7 +32,9 @@ const appointments = [
 const TodaysAppointments = () => {
   return (
     <div className="w-full">
-      <h2 className="text-2xl font-bold mb-4 text-black">Today Appointments</h2>
+      <h2 className="text-2xl font-bold mb-4 text-black">
+        Today&#39;s Appointments
+      </h2>
       <div className="flex flex-col gap-4">
         {appointments.map((appointment) => (
           <div
