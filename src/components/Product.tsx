@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React from "react";
 
 // Top Products Component
@@ -31,7 +32,7 @@ const TopProducts = () => {
               className="flex items-center gap-4 p-4 border-b-2"
             >
               {/* Left: Product Image */}
-              <img
+              <Image
                 src={product.image}
                 alt={product.name}
                 className="w-16 h-16 rounded-md object-cover"
@@ -83,7 +84,7 @@ const TopTeamMembers = () => {
               className="flex items-center gap-4 p-4 border-b-2"
             >
               {/* Left: Team Member Image */}
-              <img
+              <Image
                 src={member.image}
                 alt={member.name}
                 className="w-16 h-16 rounded-md object-cover"

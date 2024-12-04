@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React from "react";
 
 const RecentAppointments = () => {
@@ -64,7 +65,7 @@ const RecentAppointments = () => {
             <div className="flex items-center gap-3">
               {/* Service Image */}
               <div className="flex-shrink-0">
-                <img
+                <Image
                   src={appointment.serviceImage}
                   alt={appointment.service}
                   className="w-12 h-12 rounded-md object-cover"
