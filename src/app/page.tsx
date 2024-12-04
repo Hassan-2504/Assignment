@@ -14,17 +14,17 @@ const Page = () => {
   const userName = "Jane Doe"; // Replace with dynamic user data if available
 
   return (
-    <div className="flex h-screen w-screen bg-[#F5F5F5]overflow-hidden">
+    <div className="flex h-screen w-screen  overflow-hidden">
       {/* Sidebar */}
       <Sidebar isOpen={isSidebarOpen} />
 
       {/* Main Content */}
-      <div className="flex flex-col overflow-hidden">
+      <div className="flex flex-col flex-1 overflow-hidden">
         {/* Header */}
         <Header profileName={userName} joinDate="Joined: Mar 2021" />
 
         {/* Dashboard Content */}
-        <main className="p-6 overflow-y-auto">
+        <main className="flex-1 p-6 overflow-y-auto">
           <div className="flex items-center justify-between mb-6">
             {/* Personalized Greeting with bold username */}
             <h1 className="text-2xl text-gray-800">
@@ -55,7 +55,7 @@ const Page = () => {
           </div>
 
           {/* Appointments Section */}
-          <div className="min-h-screen p-6">
+          <div className="mt-10">
             <AppointmentsSection />
             <div className="mt-10">
               <TopProductsAndTeamMembers />

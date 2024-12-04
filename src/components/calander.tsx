@@ -13,7 +13,7 @@ export default function CalendarDemo() {
   };
 
   return (
-    <div className="w-full h-full flex shadow-xl border-b rounded-3xl p-5">
+    <div className="w-full h-full flex shadow-xl border-b bg-white rounded-3xl p-5">
       <Calendar
         value={date}
         onChange={handleDateChange}

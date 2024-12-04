@@ -104,14 +104,14 @@ const TopTeamMembers = () => {
 // Main Section Component
 const TopProductsAndTeamMembers = () => {
   return (
-    <div className="flex flex-col lg:flex-row gap-8">
+    <div className="flex flex-col lg:flex-row gap-4">
       {/* Top Products */}
-      <div className="w-full lg:w-1/2">
+      <div className="w-full p-6 lg:w-1/2">
         <TopProducts />
       </div>
 
       {/* Top Team Members */}
-      <div className="w-full lg:w-1/2">
+      <div className="w-full p-6 lg:w-1/2">
         <TopTeamMembers />
       </div>
     </div>
