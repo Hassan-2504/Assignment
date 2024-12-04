@@ -1,3 +1,14 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": [
+    "next/core-web-vitals", 
+    "next/typescript"
+  ],
+  "rules": {
+    // Disable specific rules or adjust them as needed
+    "no-console": "off", // Disable console warnings (if needed)
+    "react/react-in-jsx-scope": "off", // For React 17+ (JSX transform no longer requires React in scope)
+    "react/jsx-uses-react": "off", // If you are using React 17+ JSX Transform
+    "react/jsx-uses-vars": "warn", // Warn if React is not used in JSX files
+    "@typescript-eslint/no-unused-vars": "warn" // Adjust TypeScript unused variables rule
+  }
 }
