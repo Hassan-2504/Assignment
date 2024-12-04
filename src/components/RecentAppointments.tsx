@@ -65,7 +65,7 @@ const RecentAppointments = () => {
             <div className="flex items-center gap-3">
               {/* Service Image */}
               <div className="flex-shrink-0">
-                <Image
+                <img
                   src={appointment.serviceImage}
                   alt={appointment.service}
                   className="w-12 h-12 rounded-md object-cover"

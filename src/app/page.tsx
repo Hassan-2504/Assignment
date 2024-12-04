@@ -10,13 +10,12 @@ import TopProductsAndTeamMembers from "@/components/Product";
 import RecentAppointments from "@/components/RecentAppointments";
 
 const Page = () => {
-  const [isSidebarOpen] = useState(true); // Sidebar state (currently static)
   const userName = "Jane Doe"; // Replace with dynamic user data if available
 
   return (
-    <div className="flex h-screen w-screen  overflow-hidden">
+    <div className="flex h-screen w-screen bg-white overflow-hidden">
       {/* Sidebar */}
-      <Sidebar isOpen={isSidebarOpen} />
+      <Sidebar />
 
       {/* Main Content */}
       <div className="flex flex-col flex-1 overflow-hidden">
@@ -55,7 +54,7 @@ const Page = () => {
           </div>
 
           {/* Appointments Section */}
-          <div className="mt-10">
+          <div className="min-h-screen p-6">
             <AppointmentsSection />
             <div className="mt-10">
               <TopProductsAndTeamMembers />

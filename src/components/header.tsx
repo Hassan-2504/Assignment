@@ -43,11 +43,10 @@ const Header = ({
       <div className="flex items-center space-x-4 ml-auto mr-5">
         {/* Profile Image with Shadow */}
         <div className="relative w-16 h-16 shadow-xl rounded-full">
-          <Image
+          <img
             src="/images/profile.jpg"
             alt="Profile Picture"
             className="rounded-full object-cover shadow-lg"
-            fill
           />
         </div>
 

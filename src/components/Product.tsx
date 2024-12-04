@@ -32,7 +32,7 @@ const TopProducts = () => {
               className="flex items-center gap-4 p-4 border-b-2"
             >
               {/* Left: Product Image */}
-              <Image
+              <img
                 src={product.image}
                 alt={product.name}
                 className="w-16 h-16 rounded-md object-cover"
@@ -84,7 +84,7 @@ const TopTeamMembers = () => {
               className="flex items-center gap-4 p-4 border-b-2"
             >
               {/* Left: Team Member Image */}
-              <Image
+              <img
                 src={member.image}
                 alt={member.name}
                 className="w-16 h-16 rounded-md object-cover"

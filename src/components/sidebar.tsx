@@ -75,12 +75,9 @@ const Sidebar = () => {
         {/* Logo Section */}
         {isOpen && (
           <div className="flex items-center">
-            <Image
+            <img
               src="/images/logo.svg" // Replace with your actual logo path
               alt="Logo"
-              width={140}
-              height={50}
-              priority
             />
           </div>
         )}

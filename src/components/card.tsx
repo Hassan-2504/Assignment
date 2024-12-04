@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import React from "react";
 
 const Card = ({
@@ -32,7 +31,7 @@ const Card = ({
 
         {/* Image on the right */}
         <div className="ml-4">
-          <Image
+          <img
             src="/images/vector.svg"
             alt="Description of image"
             className="w-20 h-15 object-cover"
