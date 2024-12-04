@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
 import { FaCog } from "react-icons/fa"; // Settings icon
 import { IoIosNotificationsOutline } from "react-icons/io"; // Notification icon
 
@@ -46,7 +45,7 @@ const Header = ({
           <img
             src="/images/profile.jpg"
             alt="Profile Picture"
-            className="rounded-full object-cover shadow-lg"
+            className="rounded-full object-cover shadow-lg w-16 h-16"
           />
         </div>
 
