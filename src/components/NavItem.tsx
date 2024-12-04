@@ -7,7 +7,7 @@ const NavItem = ({
   onClick,
   isOpen,
 }: {
-  icon: React.ComponentType;
+  icon: React.ComponentType<{ className?: string }>; // Updated type definition
   label: string;
   isSelected: boolean;
   onClick: () => void;
